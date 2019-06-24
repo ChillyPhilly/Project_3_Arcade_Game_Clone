@@ -4,23 +4,13 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-constructor	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  constructor() {$/;"	function	line:3
-whichLane	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  whichLane() {$/;"	function	line:17
-generateSpeed	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  generateSpeed() {$/;"	function	line:23
-update	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  update(dt) {$/;"	function	line:30
-render	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  render(dt) {$/;"	function	line:43
-constructor	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  constructor() {$/;"	function	line:52
-collision	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  collision() {$/;"	function	line:59
-gemCollect	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  gemCollect() {$/;"	function	line:64
-update	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  update(dt) {$/;"	function	line:69
-hitRiver	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  hitRiver() {$/;"	function	line:95
-render	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  render() {$/;"	function	line:101
-handleInput	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  handleInput(key) {$/;"	function	line:106
-constructor	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  constructor() {$/;"	function	line:136
-update	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  update(dt) {}$/;"	function	line:145
-gemColour	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  gemColour() {$/;"	function	line:147
-render	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  render() {$/;"	function	line:154
-spawnEnemy	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^function spawnEnemy() {$/;"	function	line:163
-spawnEnemy	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^function spawnEnemy() {$/;"	function	line:163
-spawnGem	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^function spawnGem() {$/;"	function	line:172
-spawnGem	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^function spawnGem() {$/;"	function	line:172
+html	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\index.html	/^<html>$/;"	function	line:2
+head	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\index.html	/^<head>$/;"	function	line:3
+meta	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\index.html	/^    <meta charset="UTF-8">$/;"	function	line:4
+title	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\index.html	/^    <title>Effective JavaScript: Frogger<\/title>$/;"	function	line:5
+link	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\index.html	/^    <link rel="stylesheet" href="css\/style.css">$/;"	function	line:6
+body	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\index.html	/^<body>$/;"	function	line:8
+div	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\index.html	/^  <div class="scoreboard">$/;"	function	line:9
+script	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\index.html	/^    <script src="js\/resources.js"><\/script>$/;"	function	line:12
+script	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\index.html	/^    <script src="js\/app.js"><\/script>$/;"	function	line:13
+script	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\index.html	/^    <script src="js\/engine.js"><\/script>$/;"	function	line:14
