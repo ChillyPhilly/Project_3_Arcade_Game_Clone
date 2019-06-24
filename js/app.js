@@ -1,6 +1,10 @@
 // Enemies our player must avoid
 class Enemy {
-  constructor() {
+  constructor(lane) {
+    let laneYCoordinates = [60, 140, 220]; //lane Y Coordinates
+    this.speed = this.generateSpeed();
+    this.y = laneYCoordinates[lane];
+    this.x = -100;
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
 
@@ -9,12 +13,22 @@ class Enemy {
     this.sprite = 'images/enemy-bug.png';
   }
 
+  generateSpeed() {
+    let randomSpeed = Math.random() *100 + 100;
+    return randomSpeed;
+  }
+
   // Update the enemy's position, required method for game
   // Parameter: dt, a time delta between ticks
   update(dt) {
   // You should multiply any movement by the dt parameter
   // which will ensure the game runs at the same speed for
   // all computers.
+  this.x += this.speed*dt;
+    if (this.x >= 600) {
+      this.x -= 700;
+      this.speed = this.generateSpeed();
+    }
   }
 
   // Draw the enemy on the screen, required method for game
@@ -33,23 +47,49 @@ class Player {
     this.y = 410;
   }
 
-  update() {
+  collision() {
+    window.alert('You lost!');
+  }
 
+  update(dt) {
+    // setTimeout( () => {for (let enemy of allEnemies) {
+    //   if (this.x <= enemy.x - 50.5 || this.x >= enemy.x + 50.5) {
+    //     return this.collision();
+    //   }
+    // }}, 100)
+    // // 101x171
   }
 
   render() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
   }
 
-  handleInput() {
-
+  handleInput(key) {
+    if (key === 'left') {
+      this.x -= 100;
+    } else if (key === 'right') {
+      this.x += 100;
+    } else if (key === 'up') {
+      this.y -= 90;
+    } else if (key === 'down') {
+      this.y += 90;
+    }
   }
 }
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
+
+const enemy1 = new Enemy(0);
+const enemy2 = new Enemy(1);
+const enemy3 = new Enemy(2);
+
 const allEnemies = new Set();
+
+allEnemies.add(enemy1);
+allEnemies.add(enemy2);
+allEnemies.add(enemy3);
 
 const player = new Player();
 
