@@ -4,12 +4,23 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-constructor	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  constructor(lane) {$/;"	function	line:3
-generateSpeed	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  generateSpeed() {$/;"	function	line:16
-update	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  update(dt) {$/;"	function	line:23
-render	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  render(dt) {$/;"	function	line:35
-constructor	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  constructor() {$/;"	function	line:44
-collision	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  collision() {$/;"	function	line:50
-update	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  update(dt) {$/;"	function	line:54
-render	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  render() {$/;"	function	line:63
-handleInput	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  handleInput(key) {$/;"	function	line:67
+constructor	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  constructor() {$/;"	function	line:3
+whichLane	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  whichLane() {$/;"	function	line:17
+generateSpeed	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  generateSpeed() {$/;"	function	line:23
+update	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  update(dt) {$/;"	function	line:30
+render	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  render(dt) {$/;"	function	line:43
+constructor	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  constructor() {$/;"	function	line:52
+collision	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  collision() {$/;"	function	line:59
+gemCollect	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  gemCollect() {$/;"	function	line:64
+update	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  update(dt) {$/;"	function	line:69
+hitRiver	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  hitRiver() {$/;"	function	line:95
+render	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  render() {$/;"	function	line:101
+handleInput	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  handleInput(key) {$/;"	function	line:106
+constructor	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  constructor() {$/;"	function	line:136
+update	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  update(dt) {}$/;"	function	line:145
+gemColour	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  gemColour() {$/;"	function	line:147
+render	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^  render() {$/;"	function	line:154
+spawnEnemy	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^function spawnEnemy() {$/;"	function	line:163
+spawnEnemy	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^function spawnEnemy() {$/;"	function	line:163
+spawnGem	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^function spawnGem() {$/;"	function	line:172
+spawnGem	C:\Users\sweet\Documents\Udacity\Project_3_Arcade_Game_Clone\js\app.js	/^function spawnGem() {$/;"	function	line:172
