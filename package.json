@@ -1,0 +1,31 @@
+{
+  "name": "json",
+  "version": "1.0.0",
+  "description": "## Table of Contents",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChillyPhilly/Project_3_Arcade_Game_Clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChillyPhilly/Project_3_Arcade_Game_Clone/issues"
+  },
+  "homepage": "https://github.com/ChillyPhilly/Project_3_Arcade_Game_Clone#readme",
+  "dependencies": {
+    "easytimer.js": "^3.2.0",
+    "express": "^4.17.1",
+    "r.js": "^1.0.3",
+    "require.js": "^1.0.0",
+    "sweetalert2": "^8.13.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5"
+  },
+  "keywords": []
+}

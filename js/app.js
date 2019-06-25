@@ -1,3 +1,38 @@
+let score = 0;
+let gemscore = 0;
+let gameOver = false;
+const swalWithBootstrapButtons = Swal.mixin({
+  customClass: {
+    confirmButton: 'btn btn-success',
+    cancelButton: 'btn btn-danger'
+  },
+  buttonsStyling: false,
+})
+
+function swalReset() {
+  swalWithBootstrapButtons.fire({
+  title: 'Game over!',
+  text: "Care for another?",
+  type: 'warning',
+  showCancelButton: true,
+  confirmButtonText: "Yes, let's go again!",
+  cancelButtonText: "No, leave me be!",
+  reverseButtons: true
+  }).then((result) => {
+    if (result.value) {
+      reset();
+    } else if (
+      // Read more about handling dismissals
+      result.dismiss === Swal.DismissReason.cancel
+    ) {
+      swalWithBootstrapButtons.fire(
+        "No problem!",
+        "You probably have more important things to do."
+      )
+    }
+  })
+}
+
 // Enemies our player must avoid
 class Enemy {
   constructor() {
@@ -13,7 +48,7 @@ class Enemy {
     this.sprite = "images/enemy-bug.png";
   }
 
-  //Decide which of the three y-lanes the enemy will spawn in
+  //Decide which of the three horizontal lanes the enemy will spawn in
   whichLane() {
     let laneIndex = Math.floor(Math.random() * 3);
     return laneIndex;
@@ -33,9 +68,7 @@ class Enemy {
     // all computers.
     this.x += this.speed * dt;
     if (this.x >= 600) {
-      this.x -= 700;
-      this.speed = this.generateSpeed();
-      this.lane = this.whichLane();
+      allEnemies.delete(this);
     }
   }
 
@@ -57,11 +90,17 @@ class Player {
 
   //Collision handler
   collision() {
-    window.alert("You lost!");
+    allEnemies.clear();
+    clearInterval(autoSpawnEnemy);
+    clearInterval(autoSpawnGem);
+    swalReset();
+    gameOver = true;
   }
 
   //Gem pickup handler
   gemCollect() {
+    gemscore++;
+    document.querySelector(".gemscore").innerText = gemscore;
     console.log("Oooh, shiny!");
   }
 
@@ -87,7 +126,7 @@ class Player {
         setTimeout(() => {
           allGems.delete(gem);
           return this.gemCollect();
-        }, 50);
+        }, 0);
       }
     }
   }
@@ -95,6 +134,8 @@ class Player {
   hitRiver() {
     this.x = 200;
     this.y = 410;
+    score++;
+    document.querySelector('.score').innerText = score;
   }
 
   //Draw player on screen
@@ -104,29 +145,31 @@ class Player {
 
   //What to do when keys are pressed. Each has a limit to prevent off-screen movement
   handleInput(key) {
-    if (key === "left") {
-      if (this.x < 50) {
-        return;
-      } else {
-        this.x -= 100;
-      }
-    } else if (key === "right") {
-      if (this.x > 350) {
-        return;
-      } else {
-        this.x += 100;
-      }
-    } else if (key === "down") {
-      if (this.y > 400) {
-        return;
-      } else {
-        this.y += 90;
-      }
-    } else if (key === "up") {
-      if (this.y < 100) {
-        return this.hitRiver();
-      } else {
-        this.y -= 90;
+    if (gameOver === false) {
+      if (key === "left") {
+        if (this.x < 50) {
+          return;
+        } else {
+          this.x -= 100;
+        }
+      } else if (key === "right") {
+        if (this.x > 350) {
+          return;
+        } else {
+          this.x += 100;
+        }
+      } else if (key === "down") {
+        if (this.y > 400) {
+          return;
+        } else {
+          this.y += 90;
+        }
+      } else if (key === "up") {
+        if (this.y < 100) {
+          return this.hitRiver();
+        } else {
+          this.y -= 90;
+        }
       }
     }
   }
@@ -161,19 +204,14 @@ class Gem {
 // Place the player object in a variable called player
 
 function spawnEnemy() {
-  let maxEnemies = 6;
-  for (let i = 0; i <= maxEnemies; i++) {
-    setTimeout(() => {
-      allEnemies.add(new Enemy());
-    }, Math.random() * 3000);
+  if (allEnemies.size < 6) {
+    allEnemies.add(new Enemy());
   }
 }
 
 function spawnGem() {
-  for (let i = 0; i <= 2; i++) {
-    setTimeout(() => {
-      allGems.add(new Gem());
-    }, Math.random() * 20000);
+  if (allGems.size < 3) {
+    setTimeout( () => allGems.add(new Gem()), Math.floor(Math.random() * 10000));
   }
 }
 
@@ -181,8 +219,17 @@ const player = new Player();
 const allEnemies = new Set();
 const allGems = new Set();
 
-spawnGem();
-spawnEnemy();
+let autoSpawnGem = setInterval(spawnGem, 2000);
+let autoSpawnEnemy = setInterval(spawnEnemy, Math.random() * 2000);
+
+function reset() {
+  allEnemies.clear();
+  autoSpawnGem = setInterval(spawnGem, 2000);
+  autoSpawnEnemy = setInterval(spawnEnemy, Math.random() * 2000);
+  player.x = 200;
+  player.y = 410;
+  gameOver = false;
+}
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
