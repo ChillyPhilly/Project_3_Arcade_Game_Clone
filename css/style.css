@@ -1,3 +1,14 @@
 body {
     text-align: center;
 }
+
+.scoreboard {
+  font-size: 20px;
+  text-align: center;
+}
+
+footer {
+  cursor: pointer;
+  height: 50px;
+  margin-bottom: -50px;
+}

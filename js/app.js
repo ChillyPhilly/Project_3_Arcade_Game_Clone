@@ -1,8 +1,5 @@
-var Timer = require('easytimer.js').Timer;
-var timerInstance = new Timer();
-
 let score = 0;
-let gemscore = 0;
+let gemscore = 0; // Gems increase score as well, this is just for the final screen
 let gameOver = false;
 const swalWithBootstrapButtons = Swal.mixin({
   customClass: {
@@ -12,20 +9,20 @@ const swalWithBootstrapButtons = Swal.mixin({
   buttonsStyling: false,
 })
 
+//Custom popup when game over
 function swalReset() {
   swalWithBootstrapButtons.fire({
   title: 'Game over!',
-  text: "Care for another?",
+  text: `Final score: ${score}, including ${gemscore} gem(s). Care for another?`,
   type: 'warning',
   showCancelButton: true,
   confirmButtonText: "Yes, let's go again!",
   cancelButtonText: "No, leave me be!",
-  reverseButtons: true
+  reverseButtons: false
   }).then((result) => {
     if (result.value) {
       reset();
     } else if (
-      // Read more about handling dismissals
       result.dismiss === Swal.DismissReason.cancel
     ) {
       swalWithBootstrapButtons.fire(
@@ -103,7 +100,8 @@ class Player {
   //Gem pickup handler
   gemCollect() {
     gemscore++;
-    document.querySelector(".gemscore").innerText = gemscore;
+    score++;
+    document.querySelector('.score').innerText = score;
     console.log("Oooh, shiny!");
   }
 
@@ -193,6 +191,7 @@ class Gem {
 
   update(dt) {}
 
+//Randomize spawning gem colour
   gemColour() {
     const gemColours = ["Orange", "Green", "Blue"];
     let gemIndex = Math.floor(Math.random() * gemColours.length);
@@ -221,15 +220,16 @@ function spawnGem() {
   }
 }
 
+//Start game on page load
 const player = new Player();
 const allEnemies = new Set();
 const allGems = new Set();
-
 let autoSpawnGem = setInterval(spawnGem, 2000);
 let autoSpawnEnemy = setInterval(spawnEnemy, Math.random() * 2000);
 
+//Clear board and restart game
 function reset() {
-  allEnemies.clear();
+  allGems.clear();
   autoSpawnGem = setInterval(spawnGem, 2000);
   autoSpawnEnemy = setInterval(spawnEnemy, Math.random() * 2000);
   player.x = 200;
