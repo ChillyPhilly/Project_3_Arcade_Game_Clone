@@ -1,3 +1,6 @@
+var Timer = require('easytimer.js').Timer;
+var timerInstance = new Timer();
+
 let score = 0;
 let gemscore = 0;
 let gameOver = false;
@@ -88,7 +91,7 @@ class Player {
     this.y = 410;
   }
 
-  //Collision handler
+  //Enemy collision handler
   collision() {
     allEnemies.clear();
     clearInterval(autoSpawnEnemy);
@@ -106,6 +109,7 @@ class Player {
 
   //Check for collisions whenever the screen updates
   update(dt) {
+    //Collision with enemy
     for (let enemy of allEnemies) {
       if (
         this.x >= enemy.x - 80 &&
@@ -117,6 +121,7 @@ class Player {
         }, 50);
       }
     }
+    //Collision with gem
     for (let gem of allGems) {
       if (
         this.x >= gem.x - 30 &&
@@ -131,6 +136,7 @@ class Player {
     }
   }
 
+  //Update score and reset player location to beginning when river is reached
   hitRiver() {
     this.x = 200;
     this.y = 410;
