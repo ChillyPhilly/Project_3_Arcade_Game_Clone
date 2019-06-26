@@ -1,4 +1,4 @@
-var timer = new Timer();
+let timer = new Timer();
 
 timer.start();
 timer.addEventListener('secondsUpdated', function (e) {
@@ -8,6 +8,13 @@ timer.addEventListener('secondsUpdated', function (e) {
 let score = 0;
 let gemscore = 0; // Gems increase score as well, this is just for the final screen
 let gameOver = false;
+const xLaneCoordinates = [0, 100, 200, 300, 400];
+const spriteOptions = ['images/char-boy.png',
+  'images/char-cat-girl.png',
+  'images/char-horn-girl.png',
+  'images/char-pink-girl.png',
+  'images/char-princess-girl.png'];
+
 const swalWithBootstrapButtons = Swal.mixin({
   customClass: {
     confirmButton: 'btn btn-success',
@@ -89,8 +96,8 @@ class Enemy {
 // This class requires an update(), render() and
 // a handleInput() method.
 class Player {
-  constructor() {
-    this.sprite = "images/char-boy.png";
+  constructor(sprite) {
+    this.sprite = `${sprite}`;
     this.x = 200;
     this.y = 410;
   }
@@ -212,17 +219,10 @@ class Gem {
   }
 }
 
-// TODO: Create character selector
 class CharacterOption {
   constructor(option) {
-    let spriteOptions = ['images/char-boy.png',
-      'images/char-cat-girl.png',
-      'images/char-horn-girl.png',
-      'images/char-pink-girl.png',
-      'images/char-princess-girl.png'];
-    let xPositions = [20, 110, 200, 290, 380];
     this.y = 250;
-    this.x = xPositions[option];
+    this.x = xLaneCoordinates[option];
     this.sprite = spriteOptions[option];
   }
 
@@ -236,6 +236,28 @@ class Selector {
     this.y = 280;
     this.x = 200;
     this.sprite = "images/Selector.png";
+  }
+
+  handleInput(key) {
+    if (key === 'left') {
+      if (this.x < 50) {
+        return;
+      } else {
+        this.x -= 100;
+      }
+    } else if (key === 'right') {
+      if (this.x > 350) {
+        return;
+      } else {
+        this.x += 100;
+      }
+    } else if (key === 'enter') {
+      if (allCharacterOptions.size > 0) {
+        let xIndex = xLaneCoordinates.findIndex(function(index) {return index === this.x}, selector);
+        let selectedSpriteIndex = spriteOptions[xIndex];
+        init(selectedSpriteIndex);
+      }
+    }
   }
 
   render() {
@@ -272,15 +294,22 @@ function characterSelector() {
 }
 
 //Start game on page load
-const player = new Player();
-// TODO: Create set of characters from which to choose
-const allCharacterOptions = new Set();
+function init(sprite) {
+  player.add(new Player(sprite));
+  playerKeyPressListener();
+  autoSpawnGem = setInterval(spawnGem, Math.random() * 10000);
+  autoSpawnEnemy = setInterval(spawnEnemy, Math.random() * 2000);
+  allCharacterOptions.clear();
+  delete selector.x;
+}
+
+let autoSpawnGem;
+let autoSpawnEnemy;
 const allEnemies = new Set();
 const allGems = new Set();
+const allCharacterOptions = new Set();
+const player = new Set();
 const selector = new Selector();
-let autoSpawnGem = setInterval(spawnGem, Math.random() * 10000);
-let autoSpawnEnemy = setInterval(spawnEnemy, Math.random() * 2000);
-
 characterSelector();
 
 
@@ -289,8 +318,8 @@ function reset() {
   allGems.clear();
   autoSpawnGem = setInterval(spawnGem, Math.random() * 10000);
   autoSpawnEnemy = setInterval(spawnEnemy, Math.random() * 2000);
-  player.x = 200;
-  player.y = 410;
+  player.forEach(function(e) {e.x = 200});
+  player.forEach(function(e) {e.y = 410});
   score = 0;
   gemscore = 0;
   gameOver = false;
@@ -301,13 +330,29 @@ function reset() {
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
+function playerKeyPressListener() {
+  document.addEventListener("keyup", function(e) {
+    var allowedKeys = {
+      37: "left",
+      38: "up",
+      39: "right",
+      40: "down"
+    };
+
+    player.forEach(function(player) {
+      player.handleInput(allowedKeys[e.keyCode]);
+    });
+  });
+}
+
 document.addEventListener("keyup", function(e) {
   var allowedKeys = {
+    13: "enter",
     37: "left",
-    38: "up",
-    39: "right",
-    40: "down"
-  };
+    39: "right"
+  }
 
-  player.handleInput(allowedKeys[e.keyCode]);
+  if (selector) {
+    selector.handleInput(allowedKeys[e.keyCode]);
+  }
 });

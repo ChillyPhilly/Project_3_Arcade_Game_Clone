@@ -94,8 +94,10 @@ var Engine = (function(global) {
         allEnemies.forEach(function(enemy) {
             enemy.update(dt);
         });
-        player.update();
-    }
+        player.forEach(function(player) {
+          player.update();
+    });
+  };
 
     /* This function initially draws the "game level", it will then call
      * the renderEntities function. Remember, this function is called every
@@ -160,10 +162,13 @@ var Engine = (function(global) {
 
         allCharacterOptions.forEach(function(option) {
           option.render();
-        })
+        });
+
+        player.forEach(function(player) {
+          player.render();
+        });
 
         selector.render();
-        player.render();
     }
 
     /* This function does nothing but it could have been a good place to
