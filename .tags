@@ -134,6 +134,10 @@ updateEntities	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/engin
 render	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/engine.js	/^    function render() {$/;"	function	line:106
 renderEntities	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/engine.js	/^    function renderEntities() {$/;"	function	line:149
 reset	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/engine.js	/^    function reset() {$/;"	function	line:168
+connect	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/server.js	/^var connect = require('connect');$/;"	variable	line:1
+serveStatic	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/server.js	/^var serveStatic = require('serve-static');$/;"	variable	line:2
+connect	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/server.js	/^var connect = require('connect');$/;"	variable	line:1
+serveStatic	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/server.js	/^var serveStatic = require('serve-static');$/;"	variable	line:2
 html	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^<html>$/;"	function	line:2
 head	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^<head>$/;"	function	line:3
 meta	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <meta charset="UTF-8">$/;"	function	line:4
@@ -141,37 +145,85 @@ title	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    
 link	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <link rel="stylesheet" href="css\/style.css">$/;"	function	line:6
 body	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^<body>$/;"	function	line:8
 div	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^  <div class="scoreboard">$/;"	function	line:9
-span	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <span class="score">0<\/span> successful crossings$/;"	function	line:10
-br	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <br>$/;"	function	line:11
-span	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <span class="gemscore">0<\/span> gems$/;"	function	line:12
-div	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <div id="timer">00:00:00<\/div>$/;"	function	line:13
-script	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <script src="js\/resources.js"><\/script>$/;"	function	line:15
-script	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <script src="https:\/\/cdn.jsdelivr.net\/npm\/sweetalert2@8"><\/script>$/;"	function	line:16
+div	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^  <div id="timer">00:00:00<\/div>$/;"	function	line:12
+script	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <script type="text\/javascript" src="http:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.5\/jquery.min.js"><\/script>$/;"	function	line:13
+script	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <script src="node_modules\/easytimer\/dist\/easytimer.min.js"><\/script>$/;"	function	line:14
+script	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <script src="https:\/\/cdn.jsdelivr.net\/npm\/sweetalert2@8"><\/script>$/;"	function	line:15
+script	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <script src="js\/resources.js"><\/script>$/;"	function	line:16
 script	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <script src="js\/app.js"><\/script>$/;"	function	line:17
-script	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <script src="js\/engine.js"><\/script>$/;"	function	line:18
-script	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <script src="easytimer\/dist\/easytimer.min.js"><\/script>$/;"	function	line:19
-script	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <script>$/;"	function	line:20
-Timer	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^var Timer = require('easytimer.js').Timer;$/;"	variable	line:1
-swalReset	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function swalReset() {$/;"	function	line:15
-constructor	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  constructor() {$/;"	function	line:41
-whichLane	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  whichLane() {$/;"	function	line:55
-generateSpeed	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  generateSpeed() {$/;"	function	line:61
-update	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  update(dt) {$/;"	function	line:68
-render	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  render(dt) {$/;"	function	line:79
-constructor	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  constructor() {$/;"	function	line:88
-collision	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  collision() {$/;"	function	line:95
-gemCollect	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  gemCollect() {$/;"	function	line:104
-update	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  update(dt) {$/;"	function	line:111
-hitRiver	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  hitRiver() {$/;"	function	line:140
-render	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  render() {$/;"	function	line:148
-handleInput	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  handleInput(key) {$/;"	function	line:153
-constructor	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  constructor() {$/;"	function	line:185
-update	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  update(dt) {}$/;"	function	line:194
-gemColour	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  gemColour() {$/;"	function	line:196
-render	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  render() {$/;"	function	line:203
-spawnEnemy	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function spawnEnemy() {$/;"	function	line:212
-spawnEnemy	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function spawnEnemy() {$/;"	function	line:212
-spawnGem	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function spawnGem() {$/;"	function	line:218
-spawnGem	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function spawnGem() {$/;"	function	line:218
-reset	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function reset() {$/;"	function	line:231
-reset	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function reset() {$/;"	function	line:231
+script	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <script src="js\/engine.js"><\/script><\/body>$/;"	function	line:18
+Timer	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^var module, Timer = function(a) {$/;"	function	line:1
+b	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^  function b() {$/;"	function	line:4
+c	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^  function c() {$/;"	function	line:8
+b.c	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^  function c() {$/;"	function	line:8
+d	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^  function d(a, b) {$/;"	function	line:12
+b.d	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^  function d(a, b) {$/;"	function	line:12
+e	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^  function e(a, b, c) {$/;"	function	line:16
+b.e	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^  function e(a, b, c) {$/;"	function	line:16
+f	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^  function f() {$/;"	function	line:22
+g	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^  function g() {$/;"	function	line:33
+a	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function a() {$/;"	function	line:34
+b.f.g.a	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function a() {$/;"	function	line:34
+e	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function e(a, b) {$/;"	function	line:38
+g	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function g(a) {$/;"	function	line:42
+e.g	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function g(a) {$/;"	function	line:42
+B	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function B(b) {$/;"	function	line:46
+C	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function C(b) {$/;"	function	line:50
+D	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function D(b) {$/;"	function	line:54
+E	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function E(b) {$/;"	function	line:58
+F	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function F() {$/;"	function	line:62
+G	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function G() {$/;"	function	line:66
+switch	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^      switch (_) {$/;"	function	line:68
+H	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function H() {$/;"	function	line:89
+I	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function I() {$/;"	function	line:93
+J	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function J() {$/;"	function	line:97
+I.J	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function J() {$/;"	function	line:97
+K	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function K() {$/;"	function	line:101
+L	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function L(a) {$/;"	function	line:106
+M	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function M(a) {$/;"	function	line:116
+N	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function N(a) {$/;"	function	line:127
+O	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function O(a) {$/;"	function	line:131
+P	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function P() {$/;"	function	line:135
+O.P	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function P() {$/;"	function	line:135
+Q	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function Q(a) {$/;"	function	line:139
+O.Q	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function Q(a) {$/;"	function	line:139
+R	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function R() {$/;"	function	line:144
+S	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function S(a, d) {$/;"	function	line:148
+R.S	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function S(a, d) {$/;"	function	line:148
+T	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function T(a, d) {$/;"	function	line:152
+R.T	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function T(a, d) {$/;"	function	line:152
+U	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function U(a) {$/;"	function	line:156
+R.U	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function U(a) {$/;"	function	line:156
+V	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function V() {$/;"	function	line:160
+R.V	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function V() {$/;"	function	line:160
+W	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function W() {$/;"	function	line:164
+R.W	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function W() {$/;"	function	line:164
+X	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function X() {$/;"	function	line:168
+R.X	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function X() {$/;"	function	line:168
+Y	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function Y() {$/;"	function	line:172
+R.Y	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function Y() {$/;"	function	line:172
+Z	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function Z() {$/;"	function	line:176
+R.Z	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/node_modules/easytimer/dist/easytimer.min.js	/^    function Z() {$/;"	function	line:176
+swalReset	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function swalReset() {$/;"	function	line:20
+constructor	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  constructor() {$/;"	function	line:45
+whichLane	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  whichLane() {$/;"	function	line:59
+generateSpeed	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  generateSpeed() {$/;"	function	line:65
+update	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  update(dt) {$/;"	function	line:72
+render	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  render(dt) {$/;"	function	line:83
+constructor	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  constructor() {$/;"	function	line:92
+collision	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  collision() {$/;"	function	line:99
+gemCollect	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  gemCollect() {$/;"	function	line:109
+update	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  update(dt) {$/;"	function	line:117
+hitRiver	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  hitRiver() {$/;"	function	line:146
+render	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  render() {$/;"	function	line:154
+handleInput	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  handleInput(key) {$/;"	function	line:159
+constructor	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  constructor() {$/;"	function	line:191
+update	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  update(dt) {}$/;"	function	line:200
+gemColour	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  gemColour() {$/;"	function	line:203
+render	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  render() {$/;"	function	line:210
+spawnEnemy	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function spawnEnemy() {$/;"	function	line:219
+spawnEnemy	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function spawnEnemy() {$/;"	function	line:219
+spawnGem	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function spawnGem() {$/;"	function	line:225
+spawnGem	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function spawnGem() {$/;"	function	line:225
+reset	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function reset() {$/;"	function	line:239
+reset	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function reset() {$/;"	function	line:239

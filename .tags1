@@ -4,27 +4,26 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-Timer	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^var Timer = require('easytimer.js').Timer;$/;"	variable	line:1
-swalReset	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function swalReset() {$/;"	function	line:15
-constructor	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  constructor() {$/;"	function	line:41
-whichLane	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  whichLane() {$/;"	function	line:55
-generateSpeed	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  generateSpeed() {$/;"	function	line:61
-update	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  update(dt) {$/;"	function	line:68
-render	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  render(dt) {$/;"	function	line:79
-constructor	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  constructor() {$/;"	function	line:88
-collision	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  collision() {$/;"	function	line:95
-gemCollect	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  gemCollect() {$/;"	function	line:104
-update	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  update(dt) {$/;"	function	line:111
-hitRiver	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  hitRiver() {$/;"	function	line:140
-render	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  render() {$/;"	function	line:148
-handleInput	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  handleInput(key) {$/;"	function	line:153
-constructor	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  constructor() {$/;"	function	line:185
-update	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  update(dt) {}$/;"	function	line:194
-gemColour	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  gemColour() {$/;"	function	line:196
-render	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  render() {$/;"	function	line:203
-spawnEnemy	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function spawnEnemy() {$/;"	function	line:212
-spawnEnemy	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function spawnEnemy() {$/;"	function	line:212
-spawnGem	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function spawnGem() {$/;"	function	line:218
-spawnGem	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function spawnGem() {$/;"	function	line:218
-reset	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function reset() {$/;"	function	line:231
-reset	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function reset() {$/;"	function	line:231
+swalReset	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function swalReset() {$/;"	function	line:20
+constructor	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  constructor() {$/;"	function	line:45
+whichLane	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  whichLane() {$/;"	function	line:59
+generateSpeed	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  generateSpeed() {$/;"	function	line:65
+update	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  update(dt) {$/;"	function	line:72
+render	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  render(dt) {$/;"	function	line:83
+constructor	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  constructor() {$/;"	function	line:92
+collision	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  collision() {$/;"	function	line:99
+gemCollect	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  gemCollect() {$/;"	function	line:109
+update	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  update(dt) {$/;"	function	line:117
+hitRiver	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  hitRiver() {$/;"	function	line:146
+render	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  render() {$/;"	function	line:154
+handleInput	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  handleInput(key) {$/;"	function	line:159
+constructor	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  constructor() {$/;"	function	line:191
+update	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  update(dt) {}$/;"	function	line:200
+gemColour	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  gemColour() {$/;"	function	line:203
+render	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  render() {$/;"	function	line:210
+spawnEnemy	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function spawnEnemy() {$/;"	function	line:219
+spawnEnemy	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function spawnEnemy() {$/;"	function	line:219
+spawnGem	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function spawnGem() {$/;"	function	line:225
+spawnGem	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function spawnGem() {$/;"	function	line:225
+reset	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function reset() {$/;"	function	line:239
+reset	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function reset() {$/;"	function	line:239

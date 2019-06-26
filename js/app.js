@@ -1,3 +1,10 @@
+var timer = new Timer();
+
+timer.start();
+timer.addEventListener('secondsUpdated', function (e) {
+    $('#timer').html(timer.getTimeValues().toString());
+});
+
 let score = 0;
 let gemscore = 0; // Gems increase score as well, this is just for the final screen
 let gameOver = false;
@@ -94,6 +101,7 @@ class Player {
     clearInterval(autoSpawnEnemy);
     clearInterval(autoSpawnGem);
     swalReset();
+    timer.stop();
     gameOver = true;
   }
 
@@ -234,7 +242,12 @@ function reset() {
   autoSpawnEnemy = setInterval(spawnEnemy, Math.random() * 2000);
   player.x = 200;
   player.y = 410;
+  score = 0;
+  gemscore = 0;
   gameOver = false;
+  timer.start();
+  $('#timer').html(timer.getTimeValues().toString());
+  document.querySelector('.score').innerText = score;
 }
 
 // This listens for key presses and sends the keys to your
