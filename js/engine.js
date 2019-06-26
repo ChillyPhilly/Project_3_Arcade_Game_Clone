@@ -158,6 +158,11 @@ var Engine = (function(global) {
           gem.render();
         });
 
+        allCharacterOptions.forEach(function(option) {
+          option.render();
+        })
+
+        selector.render();
         player.render();
     }
 
@@ -179,9 +184,14 @@ var Engine = (function(global) {
         'images/grass-block.png',
         'images/enemy-bug.png',
         'images/char-boy.png',
+        'images/char-cat-girl.png',
+        'images/char-horn-girl.png',
+        'images/char-pink-girl.png',
+        'images/char-princess-girl.png',
         'images/Gem-Blue.png',
         'images/Gem-Green.png',
-        'images/Gem-Orange.png'
+        'images/Gem-Orange.png',
+        'images/Selector.png'
     ]);
     Resources.onReady(init);
 

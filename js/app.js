@@ -212,6 +212,39 @@ class Gem {
   }
 }
 
+// TODO: Create character selector
+class CharacterOption {
+  constructor(option) {
+    let spriteOptions = ['images/char-boy.png',
+      'images/char-cat-girl.png',
+      'images/char-horn-girl.png',
+      'images/char-pink-girl.png',
+      'images/char-princess-girl.png'];
+    let xPositions = [20, 110, 200, 290, 380];
+    this.y = 250;
+    this.x = xPositions[option];
+    this.sprite = spriteOptions[option];
+  }
+
+  render() {
+    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+  }
+}
+
+class Selector {
+  constructor() {
+    this.y = 280;
+    this.x = 200;
+    this.sprite = "images/Selector.png";
+  }
+
+  render() {
+    ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
+  }
+}
+
+//Create class for selector, including handling arrow key input + enter
+
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
@@ -228,17 +261,33 @@ function spawnGem() {
   }
 }
 
+function generateCharacterOption(index) {
+  allCharacterOptions.add(new CharacterOption(index));
+}
+
+function characterSelector() {
+  for (i = 0; i < 5; i++) {
+    generateCharacterOption(i);
+  }
+}
+
 //Start game on page load
 const player = new Player();
+// TODO: Create set of characters from which to choose
+const allCharacterOptions = new Set();
 const allEnemies = new Set();
 const allGems = new Set();
+const selector = new Selector();
 let autoSpawnGem = setInterval(spawnGem, Math.random() * 10000);
 let autoSpawnEnemy = setInterval(spawnEnemy, Math.random() * 2000);
+
+characterSelector();
+
 
 //Clear board and restart game
 function reset() {
   allGems.clear();
-  autoSpawnGem = setInterval(spawnGem, Math.random * 10000);
+  autoSpawnGem = setInterval(spawnGem, Math.random() * 10000);
   autoSpawnEnemy = setInterval(spawnEnemy, Math.random() * 2000);
   player.x = 200;
   player.y = 410;
