@@ -7,7 +7,7 @@ timer.addEventListener('secondsUpdated', function (e) {
 
 let score = 0;
 let gemscore = 0; // Gems increase score as well, this is just for the final screen
-let gameOver = false;
+let gameOver = false; // Necessary to stop character moving after game end
 const xLaneCoordinates = [0, 100, 200, 300, 400];
 const spriteOptions = ['images/char-boy.png',
   'images/char-cat-girl.png',
@@ -96,6 +96,7 @@ class Enemy {
 // This class requires an update(), render() and
 // a handleInput() method.
 class Player {
+  //Allows generating player based on selected sprite
   constructor(sprite) {
     this.sprite = `${sprite}`;
     this.x = 200;
@@ -195,6 +196,7 @@ class Player {
 }
 
 class Gem {
+  //Randomize gem locations and colour
   constructor() {
     const yCoordinates = [110, 190, 270];
     const xCoordinates = [20, 120, 220, 320, 420];
@@ -203,8 +205,6 @@ class Gem {
     this.x = xCoordinates[Math.floor(Math.random() * xCoordinates.length)];
     this.sprite = `images/Gem-${gemOption}.png`;
   }
-
-  update(dt) {}
 
 //Randomize spawning gem colour
   gemColour() {
@@ -220,6 +220,8 @@ class Gem {
 }
 
 class CharacterOption {
+  //Constructor allows looping through with an index
+  //in order to show multiple sprites on screen
   constructor(option) {
     this.y = 250;
     this.x = xLaneCoordinates[option];
@@ -231,6 +233,7 @@ class CharacterOption {
   }
 }
 
+//Selector class for player to choose sprite
 class Selector {
   constructor() {
     this.y = 280;
@@ -252,7 +255,7 @@ class Selector {
         this.x += 100;
       }
     } else if (key === 'enter') {
-      if (allCharacterOptions.size > 0) {
+      if (allCharacterOptions.size > 0) { //Prevents enter key triggering once selection is made
         let xIndex = xLaneCoordinates.findIndex(function(index) {return index === this.x}, selector);
         let selectedSpriteIndex = spriteOptions[xIndex];
         init(selectedSpriteIndex);
@@ -265,35 +268,32 @@ class Selector {
   }
 }
 
-//Create class for selector, including handling arrow key input + enter
-
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
 // Place the player object in a variable called player
 
+//Spawn an enemy if there are fewer than 6 already
 function spawnEnemy() {
   if (allEnemies.size < 6) {
     allEnemies.add(new Enemy());
   }
 }
 
+//Spawn a gem at random intervals if there are fewer than 3 already
 function spawnGem() {
   if (allGems.size < 3) {
     setTimeout( () => allGems.add(new Gem()), Math.floor(Math.random() * 10000));
   }
 }
 
-function generateCharacterOption(index) {
-  allCharacterOptions.add(new CharacterOption(index));
-}
-
+//Generate character sprites on screen from which the player can choose
 function characterSelector() {
   for (i = 0; i < 5; i++) {
-    generateCharacterOption(i);
+    allCharacterOptions.add(new CharacterOption(i));
   }
 }
 
-//Start game on page load
+//Start game on character selection (sprite).
 function init(sprite) {
   player.add(new Player(sprite));
   playerKeyPressListener();
@@ -315,9 +315,11 @@ characterSelector();
 
 //Clear board and restart game
 function reset() {
-  allGems.clear();
+  allGems.clear(); //Remove any existing gems
+  //Set up auto spawners again
   autoSpawnGem = setInterval(spawnGem, Math.random() * 10000);
   autoSpawnEnemy = setInterval(spawnEnemy, Math.random() * 2000);
+  //Reset player position
   player.forEach(function(e) {e.x = 200});
   player.forEach(function(e) {e.y = 410});
   score = 0;
@@ -330,6 +332,7 @@ function reset() {
 
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
+// I modified this as a function so it can be called once the player is selected
 function playerKeyPressListener() {
   document.addEventListener("keyup", function(e) {
     var allowedKeys = {
@@ -345,6 +348,7 @@ function playerKeyPressListener() {
   });
 }
 
+//Keypress listener for character selector
 document.addEventListener("keyup", function(e) {
   var allowedKeys = {
     13: "enter",
