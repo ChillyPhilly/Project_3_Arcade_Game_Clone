@@ -232,13 +232,13 @@ function spawnGem() {
 const player = new Player();
 const allEnemies = new Set();
 const allGems = new Set();
-let autoSpawnGem = setInterval(spawnGem, 2000);
+let autoSpawnGem = setInterval(spawnGem, Math.random() * 10000);
 let autoSpawnEnemy = setInterval(spawnEnemy, Math.random() * 2000);
 
 //Clear board and restart game
 function reset() {
   allGems.clear();
-  autoSpawnGem = setInterval(spawnGem, 2000);
+  autoSpawnGem = setInterval(spawnGem, Math.random * 10000);
   autoSpawnEnemy = setInterval(spawnEnemy, Math.random() * 2000);
   player.x = 200;
   player.y = 410;
