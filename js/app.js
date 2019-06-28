@@ -1,6 +1,5 @@
 let timer = new Timer();
 
-timer.start();
 timer.addEventListener('secondsUpdated', function (e) {
     $('#timer').html(timer.getTimeValues().toString());
 });
@@ -296,6 +295,7 @@ function characterSelector() {
 
 //Start game on character selection (sprite).
 function init(sprite) {
+  timer.start();
   player = new Player(sprite);
   playerKeyPressListener();
   autoSpawnGem = setInterval(spawnGem, Math.random() * 10000);
@@ -358,5 +358,14 @@ document.addEventListener("keyup", function(e) {
 
   if (selector) {
     selector.handleInput(allowedKeys[e.keyCode]);
+  }
+});
+
+//Restart by pressing space
+document.addEventListener("keyup", function(e) {
+  const key = e.which;
+  console.log(key);
+  if (key === 32) {
+    location.reload();
   }
 });
