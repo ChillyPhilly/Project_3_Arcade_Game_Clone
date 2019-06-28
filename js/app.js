@@ -5,6 +5,7 @@ timer.addEventListener('secondsUpdated', function (e) {
     $('#timer').html(timer.getTimeValues().toString());
 });
 
+let player;
 let score = 0;
 let gemscore = 0; // Gems increase score as well, this is just for the final screen
 let gameOver = false; // Necessary to stop character moving after game end
@@ -295,7 +296,7 @@ function characterSelector() {
 
 //Start game on character selection (sprite).
 function init(sprite) {
-  player.add(new Player(sprite));
+  player = new Player(sprite);
   playerKeyPressListener();
   autoSpawnGem = setInterval(spawnGem, Math.random() * 10000);
   autoSpawnEnemy = setInterval(spawnEnemy, Math.random() * 2000);
@@ -308,7 +309,6 @@ let autoSpawnEnemy;
 const allEnemies = new Set();
 const allGems = new Set();
 const allCharacterOptions = new Set();
-const player = new Set();
 const selector = new Selector();
 characterSelector();
 
@@ -320,8 +320,8 @@ function reset() {
   autoSpawnGem = setInterval(spawnGem, Math.random() * 10000);
   autoSpawnEnemy = setInterval(spawnEnemy, Math.random() * 2000);
   //Reset player position
-  player.forEach(function(e) {e.x = 200});
-  player.forEach(function(e) {e.y = 410});
+  player.x = 200;
+  player.y = 410;
   score = 0;
   gemscore = 0;
   gameOver = false;
@@ -342,9 +342,9 @@ function playerKeyPressListener() {
       40: "down"
     };
 
-    player.forEach(function(player) {
+    if (typeof player === 'object') {
       player.handleInput(allowedKeys[e.keyCode]);
-    });
+    };
   });
 }
 
