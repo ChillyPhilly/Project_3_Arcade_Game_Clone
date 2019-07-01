@@ -4,36 +4,6 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-swalReset	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function swalReset() {$/;"	function	line:27
-constructor	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  constructor() {$/;"	function	line:52
-whichLane	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  whichLane() {$/;"	function	line:66
-generateSpeed	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  generateSpeed() {$/;"	function	line:72
-update	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  update(dt) {$/;"	function	line:79
-render	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  render(dt) {$/;"	function	line:90
-constructor	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  constructor(sprite) {$/;"	function	line:100
-collision	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  collision() {$/;"	function	line:107
-gemCollect	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  gemCollect() {$/;"	function	line:117
-update	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  update(dt) {$/;"	function	line:125
-hitRiver	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  hitRiver() {$/;"	function	line:154
-render	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  render() {$/;"	function	line:162
-handleInput	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  handleInput(key) {$/;"	function	line:167
-constructor	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  constructor() {$/;"	function	line:200
-gemColour	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  gemColour() {$/;"	function	line:210
-render	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  render() {$/;"	function	line:217
-constructor	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  constructor(option) {$/;"	function	line:225
-render	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  render() {$/;"	function	line:231
-constructor	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  constructor() {$/;"	function	line:238
-handleInput	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  handleInput(key) {$/;"	function	line:244
-render	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^  render() {$/;"	function	line:266
-spawnEnemy	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function spawnEnemy() {$/;"	function	line:276
-spawnEnemy	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function spawnEnemy() {$/;"	function	line:276
-spawnGem	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function spawnGem() {$/;"	function	line:283
-spawnGem	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function spawnGem() {$/;"	function	line:283
-characterSelector	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function characterSelector() {$/;"	function	line:290
-characterSelector	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function characterSelector() {$/;"	function	line:290
-init	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function init(sprite) {$/;"	function	line:297
-init	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function init(sprite) {$/;"	function	line:297
-reset	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function reset() {$/;"	function	line:317
-reset	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function reset() {$/;"	function	line:317
-playerKeyPressListener	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function playerKeyPressListener() {$/;"	function	line:336
-playerKeyPressListener	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function playerKeyPressListener() {$/;"	function	line:336
+body	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/css/style.css	/^body {$/;"	function	line:1
+.scoreboard	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/css/style.css	/^.scoreboard {$/;"	function	line:5
+footer	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/css/style.css	/^footer {$/;"	function	line:10

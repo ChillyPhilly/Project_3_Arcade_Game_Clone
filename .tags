@@ -238,3 +238,6 @@ reset	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^funct
 reset	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function reset() {$/;"	function	line:317
 playerKeyPressListener	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function playerKeyPressListener() {$/;"	function	line:336
 playerKeyPressListener	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/js/app.js	/^function playerKeyPressListener() {$/;"	function	line:336
+body	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/css/style.css	/^body {$/;"	function	line:1
+.scoreboard	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/css/style.css	/^.scoreboard {$/;"	function	line:5
+footer	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/css/style.css	/^footer {$/;"	function	line:10
