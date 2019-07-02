@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport">
     <meta charset="UTF-8">
     <title>Effective JavaScript: Frogger</title>
     <link rel="stylesheet" href="css/style.css">
@@ -10,10 +11,11 @@
     Score: <span class="score">0</span>
   </div>
   <div id="timer">00:00:00</div>
-  <div id="restart">Restart by hitting spacebar!</div>
+  <div id="restart">Restart by hitting spacebar! (long press on mobile)</div>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
     <script src="node_modules/easytimer/dist/easytimer.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
     <script src="js/resources.js"></script>
     <script src="js/app.js"></script>
     <script src="js/engine.js"></script></body>

@@ -312,6 +312,32 @@ const allCharacterOptions = new Set();
 const selector = new Selector();
 characterSelector();
 
+let touch = new Hammer(document.querySelector('body'));
+
+touch.get('swipe').set({ direction: Hammer.DIRECTION_ALL, threshold: 5});
+touch.on('swipeleft swiperight swipeup swipedown', function(ev) {
+  // console.log(`${ev.type.substr(5)} detected`);
+  if (typeof selector === 'object') {
+    selector.handleInput(ev.type.substr(5));
+  }
+  if (typeof player === 'object') {
+    player.handleInput(ev.type.substr(5));
+  }
+});
+
+touch.get('tap').set({});
+touch.on('tap', function(ev) {
+  console.log('tapped!');
+  if (typeof selector === 'object') {
+    selector.handleInput('enter');
+  }
+});
+
+touch.get('press').set({ time: 1000 });
+touch.on('press', function(ev) {
+  console.log('pressed!');
+    location.reload();
+});
 
 //Clear board and restart game
 function reset() {
