@@ -1,20 +1,20 @@
-# Classic Arcade Game Clone Project
+# Udacity Project 3 - Classic Arcade Game Clone Project
+This is my take on the classic arcade game clone project, mimicking 'Frogger'. The images and skeleton code were all provided by Udacity, and I've created the functionality.
 
-## Table of Contents
+Hope you enjoy!! :)
 
-- [Instructions](#instructions)
-- [Contributing](#contributing)
+## How to run the game
+1. Download or clone the files
+2. Install the required dependencies
+3. Select character using left and right, then enter to confirm
+4. Move your character to the river or pick up a gem to earn a pointer
+5. *Avoid the giant bugs!!*
+6. See how many points you can get before being squashed by the giant bugs!
 
-## Instructions
+### Dependencies
+1. EasyTimer - https://albert-gonzalez.github.io/easytimer.js/
 
-Use this [rubric](https://review.udacity.com/#!/rubrics/15/view) for self-checking your submission.
-
-Make sure the functions you write are **object-oriented** - either class functions (like `Player` and `Enemy`) or class prototype functions such as `Enemy.prototype.checkCollisions`. Also make sure that the keyword `this` is used appropriately within your class and class prototype functions to refer to the object the function is called upon.
-
-Your **README.md** file should be updated with instructions on both how to 1. Run and 2. Play your arcade game.
-
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
-
-## Contributing
-
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+###### Below dependencies are added via website links in index.html (so don't need to be installed locally), however they are included below for reference
+1. jQuery - http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js
+2. Sweet Alert - https://cdn.jsdelivr.net/npm/sweetalert2@8
+3. Hammer JS - https://hammerjs.github.io/dist/hammer.min.js

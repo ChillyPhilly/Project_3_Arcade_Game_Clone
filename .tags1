@@ -4,20 +4,7 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-html	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^<html>$/;"	function	line:2
-head	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^<head>$/;"	function	line:3
-meta	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <meta name="viewport">$/;"	function	line:4
-meta	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <meta charset="UTF-8">$/;"	function	line:5
-title	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <title>Effective JavaScript: Frogger<\/title>$/;"	function	line:6
-link	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <link rel="stylesheet" href="css\/style.css">$/;"	function	line:7
-body	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^<body>$/;"	function	line:9
-div	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^  <div class="scoreboard">$/;"	function	line:10
-div	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^  <div id="timer">00:00:00<\/div>$/;"	function	line:13
-div	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^  <div id="restart">Restart by hitting spacebar! (long press on mobile)<\/div>$/;"	function	line:14
-script	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <script type="text\/javascript" src="http:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.5\/jquery.min.js"><\/script>$/;"	function	line:15
-script	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <script src="node_modules\/easytimer\/dist\/easytimer.min.js"><\/script>$/;"	function	line:16
-script	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <script src="https:\/\/cdn.jsdelivr.net\/npm\/sweetalert2@8"><\/script>$/;"	function	line:17
-script	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <script src="https:\/\/hammerjs.github.io\/dist\/hammer.min.js"><\/script>$/;"	function	line:18
-script	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <script src="js\/resources.js"><\/script>$/;"	function	line:19
-script	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <script src="js\/app.js"><\/script>$/;"	function	line:20
-script	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/index.html	/^    <script src="js\/engine.js"><\/script><\/body>$/;"	function	line:21
+Udacity Project 3 - Classic Arcade Game Clone Project	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/README.md	/^# Udacity Project 3 - Classic Arcade Game Clone Project$/;"	function	line:1
+How to run the game	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/README.md	/^## How to run the game$/;"	function	line:6
+Dependencies	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/README.md	/^### Dependencies$/;"	function	line:14
+Below dependencies are added via website links in index.html (so don't need to be installed locally), however they are included below for reference	/Users/phil/Documents/GitHub/Project_3_Arcade_Game_Clone/README.md	/^###### Below dependencies are added via website links in index.html (so don't need to be installed locally), however they are included below for reference$/;"	function	line:17
