@@ -8,8 +8,8 @@ Hope you enjoy!! :)
 2. Install the required dependencies
 3. Select character using left and right, then enter to confirm
 4. Move your character to the river or pick up a gem to earn a pointer
-5. *Avoid the giant bugs!!*
-6. See how many points you can get before being squashed by the giant bugs!
+5. *Avoid the **giant bugs**!!*
+6. See how many points you can get before being squashed by the ***giant bugs***!
 
 ### Dependencies
 1. EasyTimer - https://albert-gonzalez.github.io/easytimer.js/
@@ -18,3 +18,7 @@ Hope you enjoy!! :)
 1. jQuery - http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js
 2. Sweet Alert - https://cdn.jsdelivr.net/npm/sweetalert2@8
 3. Hammer JS - https://hammerjs.github.io/dist/hammer.min.js
+
+<br><br><br><br><br>
+
+***GIANT BUGS***
